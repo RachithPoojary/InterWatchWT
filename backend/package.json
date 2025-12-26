@@ -1,0 +1,25 @@
+{
+  "name": "interview-platform-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@clerk/express": "^1.7.30",
+    "@stream-io/node-sdk": "^0.7.8",
+    "stream-chat": "^8.40.0",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.3",
+    "socket.io": "^4.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.5.0",
+    "rate-limiter-flexible": "^8.1.0",
+    "compression": "^1.7.5",
+    "zod": "^3.24.1",
+    "axios": "^1.7.9"
+  }
+}
