@@ -36,7 +36,7 @@ export default function ChatPanel({ socketApi, roomId, currentUser }) {
       timestamp: new Date().toISOString(),
     };
     socketApi?.emit('chat-message', msg);
-    setMessages((prev) => [...prev, msg]); // optimistic
+    // setMessages((prev) => [...prev, msg]); // optimistic
     setInput('');
   };
 
