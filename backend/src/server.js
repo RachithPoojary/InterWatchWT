@@ -17,7 +17,7 @@ import Room from './models/Room.js';
 
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer, { cors: { origin: env.FRONTEND_URL, credentials: true } });
+const io = new Server(httpServer, { cors: { origin: env.FRONTEND_URL,  methods: ["GET", "POST"],credentials: true } });
 
 app.use(helmet());
 app.use(compression());
